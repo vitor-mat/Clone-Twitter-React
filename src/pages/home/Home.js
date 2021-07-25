@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Container, Aside, Section } from "./style";
+import { Container, Aside, Section, Footer } from "./style";
 
 export const Home = () => {
     return(
@@ -25,6 +25,27 @@ export const Home = () => {
                 <button id="btn-sing-in">Inscrever-se</button>
                 <button id="btn-enter">Entrar</button>
             </Section>
+            <Footer>
+                <nav>
+                    <a hrf="#">Sobre</a>
+                    <a hrf="#">Central de Ajuda</a>
+                    <a hrf="#">Termos de Serviços</a>
+                    <a hrf="#">Polítca de Privacidade</a>
+                    <a hrf="#">Política de cookies</a>
+                    <a hrf="#">Informações de anúncios</a>
+                    <a hrf="#">Blog</a>
+                    <a hrf="#">Status</a>
+                    <a hrf="#">Carreiras</a>
+                    <a hrf="#"> Recursos da Marca</a>
+                    <a hrf="#">Publicidade</a>
+                    <a hrf="#">Marketing</a>
+                    <a hrf="#">Twitter para Empresas</a>
+                    <a hrf="#">Desenvolvedores</a>
+                    <a hrf="#">Diretório</a>
+                    <a hrf="#">Configurações</a>
+                    <span>© 2021 Twitter, Inc</span>
+                </nav>
+            </Footer>
         </Container>
     )
 }

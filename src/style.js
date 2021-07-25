@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         overflow: hidden;
         font-family: 'Fira Code', monospace;
         font-weight: normal;
+        font-size: 13px;
     }
 
     h1{
@@ -22,5 +23,13 @@ export const GlobalStyle = createGlobalStyle`
     h1, h2, h3{
         font-weight: 700;
         text-transform: uppercase;
+    }
+
+    button, nav{
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    a{
+        color: #536471;
     }
 `

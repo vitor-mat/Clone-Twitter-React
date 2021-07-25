@@ -8,12 +8,17 @@ export const Container = styled.div`
     width: 100%:
     height: 100vh;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 790px;
+    grid-template-rows: 93vh 7vh;
 `
 
 export const Aside = styled.aside`
-    width: 50%;
-    height: 100vh;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    width: 100%;
+    height: 100%;
 
     background-image: url(${backgroundAsideImg});
 
@@ -22,15 +27,18 @@ export const Aside = styled.aside`
     align-items: center;
 
     #twitter-icon-svg-aside-home-page{
-        width: 400px;
+        width: 380px;
         fill: white;
     }
 `
 
 export const Section = styled.section`
-    width: 50%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    width: 100%;
     min-width: 700px;
-    height: 100vh;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -72,5 +80,37 @@ export const Section = styled.section`
         backgorund: transparent;
         color: ${mainColor};
         border: .5px solid ${mainColor};
+    }
+`
+
+export const Footer = styled.footer`
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+
+    nav{
+        width: 100%;
+
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+
+
+        gap: 15px;
+
+        padding: 12px 16px;
+
+        a{
+            cursor: pointer;
+        }
+
+        a, span{
+            font-size: 12px;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
     }
 `
