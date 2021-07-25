@@ -1,5 +1,5 @@
 const black = "black";
-const white = "#fff";
+const white = "white";
 const mainColor = "rgb(29, 161, 242)";
 
 export {
