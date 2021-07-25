@@ -12,12 +12,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1{
-        font-size: 64px;
+        font-size: 4rem;
         font-weight: 500;
     }
 
     h3{
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     h1, h2, h3{
