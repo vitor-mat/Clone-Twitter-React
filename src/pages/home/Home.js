@@ -27,22 +27,22 @@ export const Home = () => {
             </Section>
             <Footer>
                 <nav>
-                    <a hrf="#">Sobre</a>
-                    <a hrf="#">Central de Ajuda</a>
-                    <a hrf="#">Termos de Serviços</a>
-                    <a hrf="#">Polítca de Privacidade</a>
-                    <a hrf="#">Política de cookies</a>
-                    <a hrf="#">Informações de anúncios</a>
-                    <a hrf="#">Blog</a>
-                    <a hrf="#">Status</a>
-                    <a hrf="#">Carreiras</a>
-                    <a hrf="#"> Recursos da Marca</a>
-                    <a hrf="#">Publicidade</a>
-                    <a hrf="#">Marketing</a>
-                    <a hrf="#">Twitter para Empresas</a>
-                    <a hrf="#">Desenvolvedores</a>
-                    <a hrf="#">Diretório</a>
-                    <a hrf="#">Configurações</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Central de Ajuda</a>
+                    <a href="#">Termos de Serviços</a>
+                    <a href="#">Polítca de Privacidade</a>
+                    <a href="#">Política de cookies</a>
+                    <a href="#">Informações de anúncios</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Status</a>
+                    <a href="#">Carreiras</a>
+                    <a href="#"> Recursos da Marca</a>
+                    <a href="#">Publicidade</a>
+                    <a href="#">Marketing</a>
+                    <a href="#">Twitter para Empresas</a>
+                    <a href="#">Desenvolvedores</a>
+                    <a href="#">Diretório</a>
+                    <a href="#">Configurações</a>
                     <span>© 2021 Twitter, Inc</span>
                 </nav>
             </Footer>

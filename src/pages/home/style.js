@@ -5,20 +5,33 @@ import backgroundAsideImg from "../../assets/images/background_aside_home_page.p
 import { mainColor, white } from "../../styles/colors"
 
 export const Container = styled.div`
-    width: 100%:
+    width: 100%;
     height: 100vh;
 
     display: grid;
-    grid-template-columns: auto 790px;
+    grid-template-areas:
+      'a s'
+      'f f';
     grid-template-rows: 93vh 7vh;
+    grid-template-columns: auto 800px;
+
+    @media(max-width: 1200px){
+        display: grid;
+        grid-template-areas:
+          's'
+          'a'
+          'f';
+        grid-template-rows: 4fr 4fr 1fr;
+        grid-template-columns: 1fr;
+    }
 `
 
 export const Aside = styled.aside`
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
 
     width: 100%;
     height: 100%;
+
+    grid-area: a;
 
     background-image: url(${backgroundAsideImg});
 
@@ -33,34 +46,34 @@ export const Aside = styled.aside`
 `
 
 export const Section = styled.section`
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
 
     width: 100%;
     min-width: 700px;
     height: 100%;
+    
+    grid-area: s;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    
     gap: 20px;
-
+    
     padding-left: 50px;
-
+    
     #twitter-icon-svg-section-home-page{
         width: 50px;
         fill: ${mainColor}
     }
-
+    
     h1{
         margin: 20px 0;
     }
-
+    
     h3{
         margin: 10px 0; 
     }
-
+    
     button{
         width: 380px;
         height: 50px;
@@ -69,27 +82,24 @@ export const Section = styled.section`
         font-size: 16px;
         cursor: pointer;
     }
-
+    
     #btn-sing-in{
         background: ${mainColor};
         color: ${white};
         border: ${white};
     }
-
+    
     #btn-enter{
         backgorund: transparent;
         color: ${mainColor};
         border: .5px solid ${mainColor};
     }
 `
-
+    
 export const Footer = styled.footer`
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-
+    grid-area: f;
+    
     nav{
-        width: 100%;
-
 
         display: flex;
         flex-wrap: wrap;
@@ -103,6 +113,7 @@ export const Footer = styled.footer`
 
         a{
             cursor: pointer;
+            text-decoration: none;
         }
 
         a, span{

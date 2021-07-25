@@ -30,6 +30,6 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     a{
-        color: #536471;
+        color: #536471
     }
 `
