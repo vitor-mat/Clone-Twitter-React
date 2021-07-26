@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import backgroundAsideImg from "../../assets/images/background_aside_home_page.png"
+import logoSectionImg from "../../assets/images/background_aside_home_page.png"
 
 import { mainColor, white } from "../../styles/colors"
 
@@ -29,21 +29,43 @@ export const Container = styled.div`
 `
 
 export const Aside = styled.aside`
-
-    width: 100%;
-    height: 100%;
-
     grid-area: a;
-
-    background-image: url(${backgroundAsideImg});
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    #twitter-icon-svg-aside-home-page{
-        width: 380px;
-        fill: white;
+    position: relative;
+
+    #background-aside-div{
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        z-index: -1;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #icon-aside-div{
+        
+        width: 400px;
+        height: 400px;
+
+        z-index: 2;
+
+        padding: 20px;
+
+        svg{
+            fill: white;
+            max-width: 380px;
+        }
     }
 `
 
