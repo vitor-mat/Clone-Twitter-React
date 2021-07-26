@@ -62,7 +62,7 @@ export const Aside = styled.aside`
 
         padding: 20px;
 
-        svg{
+        #twitter-icon-svg-aside-home-page{
             fill: white;
             max-width: 380px;
         }
