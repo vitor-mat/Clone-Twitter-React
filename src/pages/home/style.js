@@ -27,8 +27,8 @@ export const Container = styled.div`
         overflow-y: auto;
     }
 
-    @media(max-width: 600px){
-        grid-template-rows: 700px 600px 160px;
+    @media(max-width: 320px){
+        grid-template-rows: 700px 600px 190px;
     }
 `
 
@@ -179,7 +179,7 @@ export const Footer = styled.footer`
         align-items: stretch;
 
 
-        gap: 15px;
+        gap: 6px;
 
         padding: 12px 16px;
 
@@ -189,7 +189,8 @@ export const Footer = styled.footer`
         }
 
         a, span{
-            font-size: 12px;
+            font-size: .9rem;
+            color: #536471
         }
 
         a:hover{

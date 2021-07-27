@@ -28,8 +28,4 @@ export const GlobalStyle = createGlobalStyle`
     button, nav{
         font-family: 'Roboto Mono', monospace;
     }
-
-    a{
-        color: #536471
-    }
 `
