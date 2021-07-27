@@ -26,6 +26,10 @@ export const Container = styled.div`
 
         overflow-y: auto;
     }
+
+    @media(max-width: 600px){
+        grid-template-rows: 700px 600px 160px;
+    }
 `
 
 export const Aside = styled.aside`
@@ -80,6 +84,7 @@ export const Section = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     
     gap: 20px;
     
@@ -132,18 +137,32 @@ export const Section = styled.section`
 
     @media(max-width: 1000px){
         align-items: center;
+        justify-content: center;
         padding-left: 0px;
 
-        width: 90%;
+        width: 100%;
+        min-width: 0;
 
         #buttons-section-div, #text-section-div{
-            max-width: 480px;
+            width: 80%;
+
+            margin: 0 auto;
+            padding: 5px;
         }    
 
         #buttons-section-div{
             flex-direction: row;
             button{
                 width: 230px;
+            }
+        }
+    }
+
+    @media(max-width: 500px){
+        #buttons-section-div{
+            flex-direction: column;
+            button{
+                width: 100%;
             }
         }
     }
