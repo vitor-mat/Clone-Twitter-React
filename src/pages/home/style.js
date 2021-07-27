@@ -12,7 +12,7 @@ export const Container = styled.div`
     grid-template-areas:
       'a s'
       'f f';
-    grid-template-rows: 93vh 7vh;
+    grid-template-rows: 95vh 5vh;
     grid-template-columns: auto 800px;
 
     @media(max-width: 1000px){
@@ -21,7 +21,7 @@ export const Container = styled.div`
           's'
           'a'
           'f';
-        grid-template-rows: 700px 600px 100px;
+        grid-template-rows: 700px 600px 110px;
         grid-template-columns: 100%;
 
         overflow-y: auto;
